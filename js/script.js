@@ -22,8 +22,8 @@ var MyArray = new Array("ali",21,false,56.357);
 
 //var NewColors = colors.slice();
 
-var result = colors.indexOf("green",1);
+//var result = colors.indexOf("green",1);
 
+var strings = colors.join("-");
 
-
-console.log(result);
+console.log(strings);
