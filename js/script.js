@@ -12,4 +12,6 @@ var MyArray = new array("ali",21,false,56.357);
 
 //colors.reverse();
 
-colors.shift();
+//colors.shift();
+
+colors.unshift();
