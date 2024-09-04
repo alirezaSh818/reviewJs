@@ -20,6 +20,10 @@ var MyArray = new Array("ali",21,false,56.357);
 
 //colors.push("yellow");
 
-var NewColors = colors.slice();
+//var NewColors = colors.slice();
 
-console.log(NewColors);
+var result = colors.indexOf("green",1);
+
+
+
+console.log(result);
