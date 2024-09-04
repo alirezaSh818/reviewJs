@@ -5,13 +5,17 @@ console.log("connected...");
 
 var colors = ["red","blue","green","black","white"];
 
-var names = new array("ali","john","jack","ana","ahmad",);
+var names = ["ali","john","jack","ana","ahmad"];
 
 
-var MyArray = new array("ali",21,false,56.357);
+var MyArray = ["ali",21,false,56.357];
 
 //colors.reverse();
 
 //colors.shift();
 
-colors.unshift();
+//colors.unshift();
+
+colors.pop();
+
+console.log(colors);
