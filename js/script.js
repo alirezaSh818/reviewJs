@@ -18,6 +18,8 @@ var MyArray = new Array("ali",21,false,56.357);
 
 //colors.pop();
 
+colors.push("yellow");
+
 
 
 console.log(colors);
