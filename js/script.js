@@ -1,38 +1,14 @@
 
 console.log("connected...");
 
-var today = new Date().getDate();
+//Named Function 
+function findBiggestNumber(a,b){
 
-var day;
-
-today>7 ? today=today-7 : today=today;
-
-switch(today){
-    case 1:
-        day ="Sunday";
-        break;
-    case 2:
-        day= "Monday";
-        break;
-    case 3:
-        day = "Tuesday";
-        break;
-    case 4 :
-        day = "Wednesday";
-        break;
-    case 5:
-        day = "Thursday";
-        break;
-    case 6:
-        day = "Friday";
-        break;
-    case 7:
-        day = "saturday";
-        break;
-    default:
-        day = "youre value not found";
-        break;
-
+    var result;
+    a>b ? result=["first number ",a] : result=["second number " , b];
+    return result;
 }
 
-console.log("today is : "+ day);
+var big = findBiggestNumber(32,45);
+
+console.log(big[0],big[1]);
