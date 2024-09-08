@@ -1,29 +1,38 @@
 
 console.log("connected...");
 
-//Array
+var today = new Date().getDate();
 
-var colors = ["red","blue","green","black","white"];
+var day;
 
-var names=new Array("ali","john","jack","ana","ahmad");
+today>7 ? today=today-7 : today=today;
 
+switch(today){
+    case 1:
+        day ="Sunday";
+        break;
+    case 2:
+        day= "Monday";
+        break;
+    case 3:
+        day = "Tuesday";
+        break;
+    case 4 :
+        day = "Wednesday";
+        break;
+    case 5:
+        day = "Thursday";
+        break;
+    case 6:
+        day = "Friday";
+        break;
+    case 7:
+        day = "saturday";
+        break;
+    default:
+        day = "youre value not found";
+        break;
 
-var MyArray = new Array("ali",21,false,56.357);
+}
 
-//colors.reverse();
-
-//colors.shift();
-
-//colors.unshift();
-
-//colors.pop();
-
-//colors.push("yellow");
-
-//var NewColors = colors.slice();
-
-//var result = colors.indexOf("green",1);
-
-var strings = colors.join("-");
-
-console.log(strings);
+console.log("today is : "+ day);
