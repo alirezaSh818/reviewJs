@@ -1,19 +1,20 @@
 
 console.log("connected...");
 
-//object
+//object constructor
 
-var Course={
-    title:"javaScript",
-    teacher: "ahmadPoormokhber",
-    level:1,
-    view:0,
-    updateView:function(){
-        return ++Course.view;
+function Course(title,teacher,level,isActive,view){
+
+    this.title=title,
+    this.teacher=teacher,
+    this.level=level,
+    this.isActive=isActive,
+    this.view=view,
+    this.updateViews=function(){
+        return ++this.view;
     }
 }
-
-console.log(Course.view);
-Course.updateView();
-console.log(Course.view);
-
+ var Course1 = new Course("JS","ali",1,true,0);
+ console.log(Course1.view);
+ Course1.updateViews();
+ console.log(Course1.view);
