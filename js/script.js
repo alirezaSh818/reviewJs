@@ -1,20 +1,15 @@
 
 console.log("connected...");
 
-//object constructor
+//for 
 
-function Course(title,teacher,level,isActive,view){
-
-    this.title=title,
-    this.teacher=teacher,
-    this.level=level,
-    this.isActive=isActive,
-    this.view=view,
-    this.updateViews=function(){
-        return ++this.view;
-    }
+const cars=["benz","BMW","Alfa Romeo"];
+const car ={name:"BMW X3", productYear: 2006 ,color:"black" ,isABS:true};
+//for object
+for(key in car){
+    console.log(key);
 }
- var Course1 = new Course("JS","ali",1,true,0);
- console.log(Course1.view);
- Course1.updateViews();
- console.log(Course1.view);
+//for array
+for(value of cars){
+    console.log(value);
+}
