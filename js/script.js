@@ -3,14 +3,17 @@ console.log("connected...");
 
 //object
 
-var person={
-    firstName:"alireza",
-    lastName:"shokoohi"
+var Course={
+    title:"javaScript",
+    teacher: "ahmadPoormokhber",
+    level:1,
+    view:0,
+    updateView:function(){
+        return ++Course.view;
+    }
 }
 
-var person2 = new Object();
+console.log(Course.view);
+Course.updateView();
+console.log(Course.view);
 
-person2.phoneNumber=10921;
-person2.age=25;
-
-console.log(person);
