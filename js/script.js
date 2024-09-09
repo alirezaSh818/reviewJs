@@ -1,14 +1,16 @@
 
 console.log("connected...");
 
-//Named Function 
-function findBiggestNumber(a,b){
+//object
 
-    var result;
-    a>b ? result=["first number ",a] : result=["second number " , b];
-    return result;
+var person={
+    firstName:"alireza",
+    lastName:"shokoohi"
 }
 
-var big = findBiggestNumber(32,45);
+var person2 = new Object();
 
-console.log(big[0],big[1]);
+person2.phoneNumber=10921;
+person2.age=25;
+
+console.log(person);
