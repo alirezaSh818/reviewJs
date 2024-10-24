@@ -1,15 +1,22 @@
 
 console.log("connected...");
 
-//for 
+//AJAX
 
-const cars=["benz","BMW","Alfa Romeo"];
-const car ={name:"BMW X3", productYear: 2006 ,color:"black" ,isABS:true};
-//for object
-for(key in car){
-    console.log(key);
+const myBtn = document.getElementById("myBtn");
+const txtDiv = document.getElementById("text");
+
+function loadText(){
+
+    var xhr = new XMLHttpRequest();
+    console.log(xhr);
+    xhr.open("GET","note.txt",true);
+    xhr.onload=function(){
+        if(xhr.status==200){
+            txtDiv.innerHTML= this.response;
+        }
+        xhr.send();
+    }
 }
-//for array
-for(value of cars){
-    console.log(value);
-}
+
+myBtn.addEventListener("click",loadText);
